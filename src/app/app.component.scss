@@ -1,0 +1,27 @@
+#container-header{
+  background-color: black;
+
+}
+.container{
+  background-color: rgb(255, 243, 215);
+}
+h1#w-text{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 60px;
+}
+#w-text{
+  color: white;
+}
+a#w-text{
+  padding: 50px;
+  font-family: 'Bebas Neue', cursive;
+}
+a#w-text:hover{
+  color: blue;
+}
+footer{
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+  padding: 20px;
+}

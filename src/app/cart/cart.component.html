@@ -1,0 +1,16 @@
+<div class="container">
+  <h3>Carrito de compras</h3>
+  <div *ngFor="let item of cartList$ | async">
+  <h4 class="paragraph" id="text" *ngIf="item.quantity == 0">No has seleccionada una cantidad valida de productos.</h4>
+  <ul class="paragraph">
+    <img width="100" class="img-thumbnail" [src]="item.image" [alt]="item.name" *ngIf="item.quantity * item.price != 0" >
+    <li id="text" *ngIf="item.quantity > 0">
+      Se ha seleccionado el producto: <span id="prod">{{item.name}}</span>
+      con la cantidad <span id="prod">{{item.quantity}}</span>.
+    </li>
+  </ul>
+  <p class="paragraph" id="text" *ngIf="item.quantity * item.price != 0">Total:${{item.quantity * item.price}}</p>
+  </div>
+</div>
+<button id="button-end" class="btn btn-dark" (click)="clearCart(item)">Limpiar carrito</button>
+

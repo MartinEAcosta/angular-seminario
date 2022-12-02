@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+}
+#title{
+  text-decoration: underline;
+  font-size: 1cm;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#text{
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.map{
+  margin: 25px;
+  border-radius: 6px;
+  border-style: solid;
+}
+.local{
+  width: 600px;
+  margin: 25px;
+  border-radius: 6px;
+  border-style: solid;
+}
+.material-symbols-outlined{
+    padding-top: 8px;
+}
